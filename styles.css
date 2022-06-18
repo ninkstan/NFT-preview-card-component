@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+}
+
+/* card */
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    width: 340px;
+    margin: 5em auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* image */ 
+
+.cube-image {
+    width: 300px;
+    border-radius: 5px;
+    margin: 19px auto auto;
+}
+
+.overlay {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 249px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+
+.icon {
+    position: absolute;
+    top: 249px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.image:hover .overlay {
+    transition: 0.5s;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.image:hover .icon {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+/* info */
+
+.info {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+h1:hover, b:hover {
+    color: hsl(178, 100%, 50%);
+
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin-top: 20px;
+}
+
+/* nft price and sell time */
+
+.price-time {
+    margin-bottom: 65px;
+    margin-left: 5px;
+    margin-right: 24px;
+    align-items: center;
+}
+
+.price-time img {
+    position: relative;
+    bottom: -2px;
+    right: 6px;
+}
+
+.nft-price {
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(178, 100%, 50%);
+}
+
+.sell-time {
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+}   
+
+/* nft creator */
+
+hr {
+    border: 1px solid hsl(215, 29%, 30%);
+    width: 300px;
+    margin: auto;
+}
+
+.creator {
+    display: flex;
+    justify-content: left;
+}
+
+.avatar {
+    width: 30px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-left: 18px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.nft-creator {
+    margin-left: 12px;
+}
+
+b {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 500;
+}
